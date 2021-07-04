@@ -1,0 +1,215 @@
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/nunito/v16/XRXV3I6Li01BKof4Mg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/nunito/v16/XRXW3I6Li01BKofAjsOkZg.ttf) format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Nunito', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.flexCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flexJCC {
+  display: flex;
+  justify-content: center;
+}
+.wGrid {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+.buttonMixin {
+  padding: 0.7rem 1.4rem;
+  border: 2px solid #FF9640;
+  border-radius: 100px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  color: white;
+  transition-duration: 0.3s;
+}
+.button {
+  padding: 0.7rem 1.4rem;
+  border: 2px solid #FF9640;
+  border-radius: 100px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  color: white;
+  transition-duration: 0.3s;
+}
+.button:hover {
+  border-color: #FF7400;
+  background: #FF7400;
+}
+.button_fill {
+  padding: 0.7rem 1.4rem;
+  border: 2px solid #FF9640;
+  border-radius: 100px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  color: white;
+  transition-duration: 0.3s;
+  background: #FF9640;
+}
+.button_fill:hover {
+  border-color: #FF7400;
+  background: #FF7400;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding: 0 1rem;
+  min-height: 5vh;
+  z-index: 1;
+}
+.header__content {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 1rem;
+  max-width: 1200px;
+  width: 100%;
+}
+.header_bg {
+  background: #ffffff;
+}
+.header_shadow {
+  box-shadow: 0 0 10px #000000a8;
+}
+.logo {
+  max-width: 10.625rem;
+}
+.logo__img {
+  width: 100%;
+}
+.nav__desktop {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(4.375rem, 6.25rem));
+  justify-content: right;
+  align-items: center;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .nav__desktop {
+    display: none;
+  }
+}
+.nav__item {
+  color: #525252;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+}
+.infoGreeting {
+  display: flex;
+  justify-content: center;
+  max-height: 85vh;
+  overflow: hidden;
+}
+.infoGreeting_bg {
+  background: #6C8CD5;
+  background: linear-gradient(118deg, #223c77 60%, #4671d5 35%, #6c8cd538 100%);
+}
+.infoGreeting__content {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  grid-gap: 1rem;
+  max-width: 1200px;
+  width: 100%;
+}
+.infoGreeting__info {
+  display: grid;
+  grid-template-rows: repeat(2, auto) 1fr;
+  grid-gap: 2rem;
+  padding: 5rem 1rem;
+}
+.infoGreeting__decor {
+  justify-self: right;
+  align-self: flex-start;
+  position: relative;
+  transform: rotateY(-22deg) rotateX(55deg) translateY(-46rem) translateX(3.3rem);
+  opacity: 0.5;
+  overflow: hidden;
+}
+.infoGreeting__img {
+  max-width: 450px;
+  width: 100%;
+  z-index: 0;
+  transition-duration: 0.3s;
+}
+.infoGreeting__img:hover {
+  transform: scale(1.2) translateX(1.5rem) translateY(-2rem);
+}
+.infoGreeting__img_shadow {
+  box-shadow: 45px 40px 10px #213b7742;
+}
+.infoGreeting__order {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: flex-start;
+  grid-gap: 1rem;
+}
+.title {
+  font-size: 4rem;
+  color: white;
+}
+.title__link {
+  color: #FF9640;
+}
+.description {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  color: white;
+}
+.socialNetwork {
+  text-align: center;
+}
+.infoBonuses {
+  display: flex;
+  justify-content: center;
+  min-height: 4vh;
+  background: #d8d8d8;
+}
+.catalog {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background: #cacaca;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  min-height: 20vh;
+  background: silver;
+}
+/*# sourceMappingURL=styles.css.map */
